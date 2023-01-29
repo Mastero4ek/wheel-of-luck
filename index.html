@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="">
+
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/lang.js"></script>
+	<script defer src="js/app.js"></script>
+
+	<title>WheelOfLuck</title>
+</head>
+
+	<body>
+		<div class="game game--style">
+			<div class="game__head">
+				<button type="button" class="button button--style button--round game__button-full">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#full-screen"></use>
+					</svg>
+				</button>
+
+				<h1 class="game__title lang-game-title">Wheel of Luck</h1>
+
+				<ul class="game__settings">
+					<li class="game__item">
+						<button type="button" class="button button--style button--round game__button-sound">
+							<svg class="icon">
+							  <use xlink:href="icons.svg#sound"></use>
+							</svg>
+						</button>
+					</li>
+
+					<li class="game__item">
+						<button type="button" class="button button--style button--round game__button-mute">
+							<svg class="icon">
+							  <use xlink:href="icons.svg#mute"></use>
+							</svg>
+						</button>
+					</li>
+
+					<li class="game__item">
+						<button value="en" type="button" class="button button--style button--round game__button-en" value="en">
+							<svg class="icon">
+							  <use xlink:href="icons.svg#eng"></use>
+							</svg>
+						</button>
+					</li>
+
+					<li class="game__item">
+						<button value="ru" type="button" class="button button--style button--round game__button-ru" value="ru">
+							<svg class="icon">
+							  <use xlink:href="icons.svg#rus"></use>
+							</svg>
+						</button>
+					</li>
+
+					<li class="game__item">
+						<button type="button" class="button button--style button--round game__button-close">
+							<svg class="icon">
+							  <use xlink:href="icons.svg#exit"></use>
+							</svg>
+						</button>
+					</li>
+				</ul>
+			</div>
+
+			<div class="game__field field">
+				<div class="field__roulette">
+					<img id="wheel" src="img/game/wheel.png" alt="#">
+
+					<button type="button" id="start" class="button button--style field__button-spin field__button-spin--inactive lang-spin">Spin wheel</button>
+
+					<div class="field__arrow">
+						<img src="img/game/arrow.svg" alt="#">
+					</div>
+				</div>
+
+				<div class="field__cards cards">
+					<ul class="cards__wrapper">
+						<li class="cards__card card" data-card="1">
+							<div class="card__back">
+								<img src="img/game/bckgnd-card.png" alt="#">
+							</div>
+
+							<div class="card__front">
+								<img src="img/game/1.png" alt="#">
+							</div>
+						</li>
+
+						<li class="cards__card card" data-card="2">
+							<div class="card__back">
+								<img src="img/game/bckgnd-card.png" alt="#">
+							</div>
+
+							<div class="card__front">
+								<img src="img/game/2.png" alt="#">
+							</div>
+						</li>
+
+						<li class="cards__card card" data-card="3">
+							<div class="card__back">
+								<img src="img/game/bckgnd-card.png" alt="#">
+							</div>
+
+							<div class="card__front">
+								<img src="img/game/3.png" alt="#">
+							</div>
+						</li>
+
+						<li class="cards__card card" data-card="4">
+							<div class="card__back">
+								<img src="img/game/bckgnd-card.png" alt="#">
+							</div>
+
+							<div class="card__front">
+								<img src="img/game/4.png" alt="#">
+							</div>
+						</li>
+
+						<li class="cards__card card" data-card="5">
+							<div class="card__back">
+								<img src="img/game/bckgnd-card.png" alt="#">
+							</div>
+
+							<div class="card__front">
+								<img src="img/game/5.png" alt="#">
+							</div>
+						</li>
+
+						<li class="cards__card card" data-card="6">
+							<div class="card__back">
+								<img src="img/game/bckgnd-card.png" alt="#">
+							</div>
+
+							<div class="card__front">
+								<img src="img/game/6.png" alt="#">
+							</div>
+						</li>
+
+						<li class="cards__card card" data-card="7">
+							<div class="card__back">
+								<img src="img/game/bckgnd-card.png" alt="#">
+							</div>
+
+							<div class="card__front">
+								<img src="img/game/7.png" alt="#">
+							</div>
+						</li>
+
+						<li class="cards__card card" data-card="8">
+							<div class="card__back">
+								<img src="img/game/bckgnd-card.png" alt="#">
+							</div>
+
+							<div class="card__front">
+								<img src="img/game/8.png" alt="#">
+							</div>
+						</li>
+
+						<li class="cards__card card" data-card="9">
+							<div class="card__back">
+								<img src="img/game/bckgnd-card.png" alt="#">
+							</div>
+
+							<div class="card__front">
+								<img src="img/game/9.png" alt="#">
+							</div>
+						</li>
+
+						<li class="cards__card card" data-card="10">
+							<div class="card__back">
+								<img src="img/game/bckgnd-card.png" alt="#">
+							</div>
+
+							<div class="card__front">
+								<img src="img/game/10.png" alt="#">
+							</div>
+						</li>
+
+						<li class="cards__card card" data-card="11">
+							<div class="card__back">
+								<img src="img/game/bckgnd-card.png" alt="#">
+							</div>
+
+							<div class="card__front">
+								<img src="img/game/11.png" alt="#">
+							</div>
+						</li>
+
+						<li class="cards__card card" data-card="12">
+							<div class="card__back">
+								<img src="img/game/bckgnd-card.png" alt="#">
+							</div>
+
+							<div class="card__front">
+								<img src="img/game/12.png" alt="#">
+							</div>
+						</li>
+
+						<li class="cards__card card" data-card="13">
+							<div class="card__back">
+								<img src="img/game/bckgnd-card.png" alt="#">
+							</div>
+
+							<div class="card__front">
+								<img src="img/game/13.png" alt="#">
+							</div>
+						</li>
+
+						<li class="cards__card card" data-card="14">
+							<div class="card__back">
+								<img src="img/game/bckgnd-card.png" alt="#">
+							</div>
+
+							<div class="card__front">
+								<img src="img/game/14.png" alt="#">
+							</div>
+						</li>
+
+						<li class="cards__card card" data-card="15">
+							<div class="card__back">
+								<img src="img/game/bckgnd-card.png" alt="#">
+							</div>
+
+							<div class="card__front">
+								<img src="img/game/15.png" alt="#">
+							</div>
+						</li>
+
+						<li class="cards__card card" data-card="16">
+							<div class="card__back">
+								<img src="img/game/bckgnd-card.png" alt="#">
+							</div>
+
+							<div class="card__front">
+								<img src="img/game/16.png" alt="#">
+							</div>
+						</li>
+
+						<li class="cards__card card" data-card="17">
+							<div class="card__back">
+								<img src="img/game/bckgnd-card.png" alt="#">
+							</div>
+
+							<div class="card__front">
+								<img src="img/game/17.png" alt="#">
+							</div>
+						</li>
+
+						<li class="cards__card card" data-card="18">
+							<div class="card__back">
+								<img src="img/game/bckgnd-card.png" alt="#">
+							</div>
+
+							<div class="card__front">
+								<img src="img/game/18.png" alt="#">
+							</div>
+						</li>
+
+						<li class="cards__card card" data-card="19">
+							<div class="card__back">
+								<img src="img/game/bckgnd-card.png" alt="#">
+							</div>
+
+							<div class="card__front">
+								<img src="img/game/19.png" alt="#">
+							</div>
+						</li>
+
+						<li class="cards__card card" data-card="20">
+							<div class="card__back">
+								<img src="img/game/bckgnd-card.png" alt="#">
+							</div>
+
+							<div class="card__front">
+								<img src="img/game/20.png" alt="#">
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<button type="button" class="button button--style button--menu field__button-shuffle lang-shuffle-btn">Start game</button>
+			</div>
+
+			<div class="game__description">
+				<p class="lang-start-text">Press 'START GAME'...</p>
+				<p class="lang-spin-text">Press 'SPIN WHEEL' and try your luck...</p>
+				<p class="lang-choose-text">This card is already open, choose another one...</p>
+			</div>
+
+			<ul class="game__menu">
+				<li class="game__link">
+					<button type="button" class="button button--style button--menu game__button-enter lang-play">Play Game</button>
+				</li>
+
+				<li class="game__link">
+					<button type="button" class="button button--style button--menu game__button-rules lang-rules-btn">Game rules</button>
+				</li>
+
+				<li class="game__link">
+					<button type="button" class="button button--style button--menu game__button-exit lang-quite">Quite game</button>
+				</li>
+			</ul>
+		</div>
+
+		<div class="overlay">
+			<div class="modal modal--style modal-congratulation">
+				<h6 class="modal__title lang-congratulation">Congratulations!!!</h6>
+
+				<div class="modal__img big">
+					<img src="img/game/cards.png" alt="#">
+				</div>
+
+				<button class="button button--style button--menu modal__button-new lang-new-game">New game</button>
+			</div>
+
+			<div class="modal modal--style modal-card" data-modal="1">
+				<div class="modal__img">
+					<img src="img/game/1.png" alt="#">
+				</div>
+
+				<div class="modal__description">
+					<h6 class="modal__title lang-title-1">1 white</h6>
+
+					<p class="modal__text lang-text-1">Tell me about the most...<br>You have 3 minutes...</p>
+
+					<button type="button" class="button button--style button--menu modal__button-done lang-done" data-btn="1">Execute</button>
+
+					<div class="countdown">
+						<p class="countdown-time time" data-time="1"></p>
+					</div>
+				</div>
+
+				<button class="button button--style button--round modal__button-close" data-close="1">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#cross"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal modal--style modal-card" data-modal="2">
+				<div class="modal__img">
+					<img src="img/game/2.png" alt="#">
+				</div>
+
+				<div class="modal__description">
+					<h6 class="modal__title lang-title-2">2 red</h6>
+
+					<p class="modal__text lang-text-2">Complete the task...<br>You have 5 minutes...</p>
+
+					<button type="button" class="button button--style button--menu modal__button-done lang-done" data-btn="2">Execute</button>
+
+					<div class="countdown">
+						<p class="countdown-time time" data-time="2"></p>
+					</div>
+				</div>
+
+				<button class="button button--style button--round modal__button-close" data-close="2">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#cross"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal modal--style modal-card" data-modal="3">
+				<div class="modal__img">
+					<img src="img/game/3.png" alt="#">
+				</div>
+
+				<div class="modal__description">
+					<h6 class="modal__title lang-title-3">3 white</h6>
+
+					<p class="modal__text lang-text-3">Tell me about the most...<br>You have 3 minutes...</p>
+
+					<button type="button" class="button button--style button--menu modal__button-done lang-done" data-btn="3">Execute</button>
+
+					<div class="countdown">
+						<p class="countdown-time time" data-time="3"></p>
+					</div>
+				</div>
+
+				<button class="button button--style button--round modal__button-close" data-close="3">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#cross"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal modal--style modal-card" data-modal="4">
+				<div class="modal__img">
+					<img src="img/game/4.png" alt="#">
+				</div>
+
+				<div class="modal__description">
+					<h6 class="modal__title lang-title-4">4 red</h6>
+
+					<p class="modal__text lang-text-4">Complete the task...<br>You have 5 minutes...</p>
+
+					<button type="button" class="button button--style button--menu modal__button-done lang-done" data-btn="4">Execute</button>
+
+					<div class="countdown">
+						<p class="countdown-time time" data-time="4"></p>
+					</div>
+				</div>
+
+				<button class="button button--style button--round modal__button-close" data-close="4">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#cross"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal modal--style modal-card" data-modal="5">
+				<div class="modal__img">
+					<img src="img/game/5.png" alt="#">
+				</div>
+
+				<div class="modal__description">
+					<h6 class="modal__title lang-title-5">5 white</h6>
+
+					<p class="modal__text lang-text-5">Tell me about the most...<br>You have 3 minutes...</p>
+
+					<button type="button" class="button button--style button--menu modal__button-done lang-done" data-btn="5">Execute</button>
+
+					<div class="countdown">
+						<p class="countdown-time time" data-time="5"></p>
+					</div>
+				</div>
+
+				<button class="button button--style button--round modal__button-close" data-close="5">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#cross"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal modal--style modal-card" data-modal="6">
+				<div class="modal__img">
+					<img src="img/game/6.png" alt="#">
+				</div>
+
+				<div class="modal__description">
+					<h6 class="modal__title lang-title-6">6 red</h6>
+
+					<p class="modal__text lang-text-6">Complete the task...<br>You have 5 minutes...</p>
+
+					<button type="button" class="button button--style button--menu modal__button-done lang-done" data-btn="6">Execute</button>
+
+					<div class="countdown">
+						<p class="countdown-time time" data-time="6"></p>
+					</div>
+				</div>
+
+				<button class="button button--style button--round modal__button-close" data-close="6">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#cross"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal modal--style modal-card" data-modal="7">
+				<div class="modal__img">
+					<img src="img/game/7.png" alt="#">
+				</div>
+
+				<div class="modal__description">
+					<h6 class="modal__title lang-title-7">7 white</h6>
+
+					<p class="modal__text lang-text-7">Tell me about the most...<br>You have 3 minutes...</p>
+
+					<button type="button" class="button button--style button--menu modal__button-done lang-done" data-btn="7">Execute</button>
+
+					<div class="countdown">
+						<p class="countdown-time time" data-time="7"></p>
+					</div>
+				</div>
+
+				<button class="button button--style button--round modal__button-close" data-close="7">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#cross"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal modal--style modal-card" data-modal="8">
+				<div class="modal__img">
+					<img src="img/game/8.png" alt="#">
+				</div>
+
+				<div class="modal__description">
+					<h6 class="modal__title lang-title-8">8 red</h6>
+
+					<p class="modal__text lang-text-8">Complete the task...<br>You have 5 minutes...</p>
+
+					<button type="button" class="button button--style button--menu modal__button-done lang-done" data-btn="8">Execute</button>
+
+					<div class="countdown">
+						<p class="countdown-time time" data-time="8"></p>
+					</div>
+				</div>
+
+				<button class="button button--style button--round modal__button-close" data-close="8">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#cross"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal modal--style modal-card" data-modal="9">
+				<div class="modal__img">
+					<img src="img/game/9.png" alt="#">
+				</div>
+
+				<div class="modal__description">
+					<h6 class="modal__title lang-title-9">9 white</h6>
+
+					<p class="modal__text lang-text-9">Tell me about the most...<br>You have 3 minutes...</p>
+
+					<button type="button" class="button button--style button--menu modal__button-done lang-done" data-btn="9">Execute</button>
+
+					<div class="countdown">
+						<p class="countdown-time time" data-time="9"></p>
+					</div>
+				</div>
+
+				<button class="button button--style button--round modal__button-close" data-close="9">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#cross"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal modal--style modal-card" data-modal="10">
+				<div class="modal__img">
+					<img src="img/game/10.png" alt="#">
+				</div>
+
+				<div class="modal__description">
+					<h6 class="modal__title lang-title-10">10 red</h6>
+
+					<p class="modal__text lang-text-10">Complete the task...<br>You have 5 minutes...</p>
+
+					<button type="button" class="button button--style button--menu modal__button-done lang-done"data-btn="10">Execute</button>
+
+					<div class="countdown">
+						<p class="countdown-time time" data-time="10"></p>
+					</div>
+				</div>
+
+				<button class="button button--style button--round modal__button-close" data-close="10">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#cross"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal modal--style modal-card" data-modal="11">
+				<div class="modal__img">
+					<img src="img/game/11.png" alt="#">
+				</div>
+
+				<div class="modal__description">
+					<h6 class="modal__title lang-title-11">11 white</h6>
+
+					<p class="modal__text lang-text-11">Tell me about the most...<br>You have 3 minutes...</p>
+
+					<button type="button" class="button button--style button--menu modal__button-done lang-done" data-btn="11">Execute</button>
+
+					<div class="countdown">
+						<p class="countdown-time time" data-time="11"></p>
+					</div>
+				</div>
+
+				<button class="button button--style button--round modal__button-close" data-close="11">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#cross"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal modal--style modal-card" data-modal="12">
+				<div class="modal__img">
+					<img src="img/game/12.png" alt="#">
+				</div>
+
+				<div class="modal__description">
+					<h6 class="modal__title lang-title-12">12 red</h6>
+
+					<p class="modal__text lang-text-12">Complete the task...<br>You have 5 minutes...</p>
+
+					<button type="button" class="button button--style button--menu modal__button-done lang-done" data-btn="12">Execute</button>
+
+					<div class="countdown">
+						<p class="countdown-time time" data-time="12"></p>
+					</div>
+				</div>
+
+				<button class="button button--style button--round modal__button-close" data-close="12">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#cross"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal modal--style modal-card" data-modal="13">
+				<div class="modal__img">
+					<img src="img/game/13.png" alt="#">
+				</div>
+
+				<div class="modal__description">
+					<h6 class="modal__title lang-title-13">13 white</h6>
+
+					<p class="modal__text lang-text-13">Tell me about the most...<br>You have 3 minutes...</p>
+
+					<button type="button" class="button button--style button--menu modal__button-done lang-done" data-btn="13">Execute</button>
+
+					<div class="countdown">
+						<p class="countdown-time time" data-time="13"></p>
+					</div>
+				</div>
+
+				<button class="button button--style button--round modal__button-close" data-close="13">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#cross"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal modal--style modal-card" data-modal="14">
+				<div class="modal__img">
+					<img src="img/game/14.png" alt="#">
+				</div>
+
+				<div class="modal__description">
+					<h6 class="modal__title lang-title-14">14 red</h6>
+
+					<p class="modal__text lang-text-14">Complete the task...<br>You have 5 minutes...</p>
+
+					<button type="button" class="button button--style button--menu modal__button-done lang-done" data-btn="14">Execute</button>
+
+					<div class="countdown">
+						<p class="countdown-time time" data-time="14"></p>
+					</div>
+				</div>
+
+				<button class="button button--style button--round modal__button-close" data-close="14">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#cross"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal modal--style modal-card" data-modal="15">
+				<div class="modal__img">
+					<img src="img/game/15.png" alt="#">
+				</div>
+
+				<div class="modal__description">
+					<h6 class="modal__title lang-title-15">15 white</h6>
+
+					<p class="modal__text lang-text-15">Tell me about the most...<br>You have 3 minutes...</p>
+
+					<button type="button" class="button button--style button--menu modal__button-done lang-done" data-btn="15">Execute</button>
+
+					<div class="countdown">
+						<p class="countdown-time time" data-time="15"></p>
+					</div>
+				</div>
+
+				<button class="button button--style button--round modal__button-close" data-close="15">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#cross"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal modal--style modal-card" data-modal="16">
+				<div class="modal__img">
+					<img src="img/game/16.png" alt="#">
+				</div>
+
+				<div class="modal__description">
+					<h6 class="modal__title lang-title-16">16 red</h6>
+
+					<p class="modal__text lang-text-16">Complete the task...<br>You have 5 minutes...</p>
+
+					<button type="button" class="button button--style button--menu modal__button-done lang-done" data-btn="16">Execute</button>
+
+					<div class="countdown">
+						<p class="countdown-time time" data-time="16"></p>
+					</div>
+				</div>
+
+				<button class="button button--style button--round modal__button-close" data-close="16">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#cross"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal modal--style modal-card" data-modal="17">
+				<div class="modal__img">
+					<img src="img/game/17.png" alt="#">
+				</div>
+
+				<div class="modal__description">
+					<h6 class="modal__title lang-title-17">17 white</h6>
+
+					<p class="modal__text lang-text-17">Tell me about the most...<br>You have 3 minutes...</p>
+
+					<button type="button" class="button button--style button--menu modal__button-done lang-done" data-btn="17">Execute</button>
+
+					<div class="countdown">
+						<p class="countdown-time time" data-time="17"></p>
+					</div>
+				</div>
+
+				<button class="button button--style button--round modal__button-close" data-close="17">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#cross"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal modal--style modal-card" data-modal="18">
+				<div class="modal__img">
+					<img src="img/game/18.png" alt="#">
+				</div>
+
+				<div class="modal__description">
+					<h6 class="modal__title lang-title-18">18 red</h6>
+
+					<p class="modal__text lang-text-18">Complete the task...<br>You have 5 minutes...</p>
+
+					<button type="button" class="button button--style button--menu modal__button-done lang-done" data-btn="18">Execute</button>
+
+					<div class="countdown">
+						<p class="countdown-time time" data-time="18"></p>
+					</div>
+				</div>
+
+				<button class="button button--style button--round modal__button-close" data-close="18">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#cross"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal modal--style modal-card" data-modal="19">
+				<div class="modal__img">
+					<img src="img/game/19.png" alt="#">
+				</div>
+
+				<div class="modal__description">
+					<h6 class="modal__title lang-title-19">19 white</h6>
+
+					<p class="modal__text lang-text-19">Tell me about the most...<br>You have 3 minutes...</p>
+
+					<button type="button" class="button button--style button--menu modal__button-done lang-done" data-btn="19">Execute</button>
+
+					<div class="countdown">
+						<p class="countdown-time time" data-time="19"></p>
+					</div>
+				</div>
+
+				<button class="button button--style button--round modal__button-close" data-close="19">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#cross"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="modal modal--style modal-card" data-modal="20">
+				<div class="modal__img">
+					<img src="img/game/20.png" alt="#">
+				</div>
+
+				<div class="modal__description">
+					<h6 class="modal__title lang-title-20">20 red</h6>
+
+					<p class="modal__text lang-text-20">Complete the task...<br>You have 5 minutes...</p>
+
+					<button type="button" class="button button--style button--menu modal__button-done lang-done" data-btn="20">Execute</button>
+
+					<div class="countdown">
+						<p class="countdown-time time" data-time="20"></p>
+					</div>
+				</div>
+
+				<button class="button button--style button--round modal__button-close" data-close="20">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#cross"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="rules">
+				<h3 class="rules__title lang-rules-title">Game rules</h3>
+
+				<ul class="rules__list">
+					<li class="rules__item lang-rules-item-1">At the beginning of the game, the cards are automatically shuffled.</li>
+					<li class="rules__item lang-rules-item-2">The course of the game is carried out clockwise.</li>
+					<li class="rules__item lang-rules-item-3">If the wheel stops on an already opened card, the player can choose any other closed card.</li>
+					<li class="rules__item lang-rules-item-4">The player must complete the task shown on the card.</li>
+					<li class="rules__item lang-rules-item-5">When all the cards are revealed, the game ends and you can start a new game.</li>
+					<li class="rules__item lang-rules-item-6"></li>
+					<li class="rules__item lang-rules-item-7"></li>
+					<li class="rules__item lang-rules-item-8"></li>
+					<li class="rules__item lang-rules-item-9"></li>
+					<li class="rules__item lang-rules-item-10"></li>
+				</ul>
+
+				<button class="button button--style button--round rules__button-close">
+					<svg class="icon">
+					  <use xlink:href="icons.svg#cross"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+	</body>
+</html>

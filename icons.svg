@@ -1,0 +1,199 @@
+<svg width="0" height="0">
+  <symbol version="1.1" id="full-screen" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve" viewBox="0 0 513.32 513.32">
+
+    <g>
+
+      <g>
+
+        <g>
+
+          <polygon points="177.523,305.853 42.777,440.6 42.777,342.213 0,342.213 0,513.32 171.107,513.32 171.107,470.543 
+
+        74.859,470.543 209.605,335.797      "></polygon>
+
+          <polygon points="470.543,440.6 72.72,42.777 171.107,42.777 171.107,0 0,0 0,171.107 42.777,171.107 42.777,72.72 440.6,470.543 
+
+        342.213,470.543 342.213,513.32 513.32,513.32 513.32,342.213 470.543,342.213       "></polygon>
+
+          <polygon points="342.213,0 342.213,42.777 442.739,42.777 307.992,177.523 337.935,207.467 470.543,74.859 470.543,171.107 
+
+        513.32,171.107 513.32,0       "></polygon>
+
+        </g>
+
+      </g>
+
+    </g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+  </symbol>
+
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="sound">
+    <defs></defs>
+    <g id="Layer_34">
+      <path d="M18 29a1 1 0 01-.57-.18l-10-7A1 1 0 017 21V11a1 1 0 01.43-.82l10-7a1 1 0 011-.07A1 1 0 0119 4v24a1 1 0 01-.54.89A1 1 0 0118 29zm-9-8.52l8 5.6V5.92l-8 5.6z"></path>
+      <path d="M8 22H4a3 3 0 01-3-3v-6a3 3 0 013-3h4a1 1 0 011 1v10a1 1 0 01-1 1zM4 12a1 1 0 00-1 1v6a1 1 0 001 1h3v-8zm14 9v-2a3 3 0 002.12-5.12l1.42-1.42A5 5 0 0118 21zm8.48 4.48a1 1 0 01-.71-.29 1 1 0 010-1.42 11 11 0 000-15.54 1 1 0 111.42-1.42 13 13 0 010 18.38 1 1 0 01-.71.29z"></path>
+      <path d="M23.65 22.65a1 1 0 01-.7-.29A1 1 0 0123 21a7 7 0 000-9.9 1 1 0 011.41-1.41 9 9 0 010 12.72 1 1 0 01-.76.24z"></path>
+    </g>
+  </symbol>
+
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="mute">
+    <defs></defs>
+    <g id="Layer_35">
+      <path d="M18 29a1 1 0 01-.57-.18l-10-7A1 1 0 017 21V11a1 1 0 01.43-.82l10-7a1 1 0 011-.07A1 1 0 0119 4v24a1 1 0 01-.54.89A1 1 0 0118 29zm-9-8.52l8 5.6V5.92l-8 5.6z"></path>
+      <path d="M8 22H4a3 3 0 01-3-3v-6a3 3 0 013-3h4a1 1 0 011 1v10a1 1 0 01-1 1zM4 12a1 1 0 00-1 1v6a1 1 0 001 1h3v-8z"></path>
+      <path transform="rotate(-45 25.758 16)" d="M24.76 10h2v12h-2z"></path>
+      <path transform="rotate(-45 25.758 16)" d="M19.76 15h12v2h-12z"></path>
+    </g>
+  </symbol>
+
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" id="eng">
+    <clipPath id="t">
+      <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"></path>
+    </clipPath>
+    <path d="M0,0 v30 h60 v-30 z" fill="#00247d"></path>
+    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"></path>
+    <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#cf142b" stroke-width="4"></path>
+    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"></path>
+    <path d="M30,0 v30 M0,15 h60" stroke="#cf142b" stroke-width="6"></path>
+  </symbol>
+
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6" id="rus">
+    <rect fill="#fff" width="9" height="3"></rect>
+    <rect fill="#d52b1e" y="3" width="9" height="3"></rect>
+    <rect fill="#0039a6" y="2" width="9" height="2"></rect>
+  </symbol>
+
+  <symbol version="1.1" id="exit" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve" viewBox="0 0 459 459">
+
+    <g>
+
+      <g id="exit-to-app">
+
+        <path d="M181.05,321.3l35.7,35.7l127.5-127.5L216.75,102l-35.7,35.7l66.3,66.3H0v51h247.35L181.05,321.3z M408,0H51
+
+      C22.95,0,0,22.95,0,51v102h51V51h357v357H51V306H0v102c0,28.05,22.95,51,51,51h357c28.05,0,51-22.95,51-51V51
+
+      C459,22.95,436.05,0,408,0z"></path>
+
+      </g>
+
+    </g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+  </symbol>
+
+  <symbol version="1.1" id="cross" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve" viewBox="0 0 612.043 612.043">
+
+    <g>
+
+      <g id="cross">
+
+        <g>
+
+          <path d="M397.503,306.011l195.577-195.577c25.27-25.269,25.27-66.213,0-91.482c-25.269-25.269-66.213-25.269-91.481,0
+
+        L306.022,214.551L110.445,18.974c-25.269-25.269-66.213-25.269-91.482,0s-25.269,66.213,0,91.482L214.54,306.033L18.963,501.61
+
+        c-25.269,25.269-25.269,66.213,0,91.481c25.269,25.27,66.213,25.27,91.482,0l195.577-195.576l195.577,195.576
+
+        c25.269,25.27,66.213,25.27,91.481,0c25.27-25.269,25.27-66.213,0-91.481L397.503,306.011z"></path>
+
+        </g>
+
+      </g>
+
+    </g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+    <g></g>
+
+  </symbol>
+
+
+</svg>
