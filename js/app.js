@@ -4,17 +4,21 @@ function toggleFullScreen() {
 		!document.mozFullScreenElement && !document.webkitFullscreenElement) {  // текущие методы работы
 		if (document.documentElement.requestFullscreen) {
 			document.documentElement.requestFullscreen();
-		} else if (document.documentElement.mozRequestFullScreen) {
+		} else
+		if (document.documentElement.mozRequestFullScreen) {
 			document.documentElement.mozRequestFullScreen();
-		} else if (document.documentElement.webkitRequestFullscreen) {
+		} else
+		if (document.documentElement.webkitRequestFullscreen) {
 			document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
 		}
 	} else {
 		if (document.cancelFullScreen) {
 			document.cancelFullScreen();
-		} else if (document.mozCancelFullScreen) {
+		} else
+		if (document.mozCancelFullScreen) {
 			document.mozCancelFullScreen();
-		} else if (document.webkitCancelFullScreen) {
+		} else
+		if (document.webkitCancelFullScreen) {
 			document.webkitCancelFullScreen();
 		}
 	}
@@ -121,21 +125,21 @@ enter.addEventListener('click', () => {
 			langSpin.classList.remove('active');
 			langChoose.classList.remove('active');
 		} else
-			if(langStart.classList.contains('active') &&
-				!langSpin.classList.contains('active') &&
-				!langChoose.classList.contains('active')) {
-				langStart.style.display = 'flex';
-			} else
-				if(!langStart.classList.contains('active') &&
-					langSpin.classList.contains('active') &&
-					!langChoose.classList.contains('active')) {
-					langSpin.style.display = 'flex';
-				} else
-					if(!langStart.classList.contains('active')  &&
-						!langSpin.classList.contains('active') &&
-						langChoose.classList.contains('active')) {
-						langChoose.style.display = 'flex';
-					}
+		if(langStart.classList.contains('active') &&
+			!langSpin.classList.contains('active') &&
+			!langChoose.classList.contains('active')) {
+			langStart.style.display = 'flex';
+		} else
+		if(!langStart.classList.contains('active') &&
+			langSpin.classList.contains('active') &&
+			!langChoose.classList.contains('active')) {
+			langSpin.style.display = 'flex';
+		} else
+		if(!langStart.classList.contains('active')  &&
+			!langSpin.classList.contains('active') &&
+			langChoose.classList.contains('active')) {
+			langChoose.style.display = 'flex';
+		}
 	}, 800);
 });
 
