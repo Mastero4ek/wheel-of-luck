@@ -1,7 +1,8 @@
 //fullscreen
 function toggleFullScreen() {
 	if (!document.fullscreenElement &&    // альтернативный стандартный метод
-		!document.mozFullScreenElement && !document.webkitFullscreenElement) {  // текущие методы работы
+		!document.mozFullScreenElement &&
+		!document.webkitFullscreenElement) {  // текущие методы работы
 		if (document.documentElement.requestFullscreen) {
 			document.documentElement.requestFullscreen();
 		} else
