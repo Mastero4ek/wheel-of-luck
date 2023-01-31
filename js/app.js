@@ -193,11 +193,8 @@ const soundBtn = document.querySelector('.game__button-sound'),
 	  cardMusic = new Audio('audio/card-flip0.5s.mp3'),
 	  backMusic = new Audio('audio/back.mp3');
 
-backMusic.addEventListener("canplaythrough", event => {
-  //аудио может быть воспроизведено; проиграть, если позволяют разрешения
-  backMusic.play();
-  backMusic.setAttribute('loop', '100000');
-});
+backMusic.play();
+backMusic.setAttribute('loop', '100000');
 
 soundBtn.addEventListener('click', () => {
 	soundBtn.style.display = 'none';
